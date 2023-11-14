@@ -1,8 +1,8 @@
 INSERT INTO Patient(email,password,name,address,gender)
 VALUES
-('ramesh@gmail.com','hrishikesh13','Ramesh','Tamil Nadu', 'male'),
-('suresh@gmail.com','hrishikesh13','Suresh','Karnataka', 'male'),
-('rakesh@gmail.com','hrishikesh13','Rakesh','Gujarat', 'male')
+('ramesh@gmail.com','sumanth13','Ramesh','Tamil Nadu', 'male'),
+('suresh@gmail.com','sumanth13','Suresh','Karnataka', 'male'),
+('rakesh@gmail.com','sumanth13','Rakesh','Gujarat', 'male')
 ;
 
 INSERT INTO MedicalHistory(id,date,conditions,surgeries,medication)
@@ -14,8 +14,8 @@ VALUES
 
 INSERT INTO Doctor(email, gender, password, name)
 VALUES
-('hathalye7@gmail.com', 'male', 'hrishikesh13', 'Hrishikesh Athalye'),
-('hathalye8@gmail.com', 'male', 'hrishikesh13', 'Hrishikesh Athalye')
+('sumanth7@gmail.com', 'male', 'sumanth13', 'sumanth'),
+('prasanth8@gmail.com', 'male', 'sumanth13', 'prasanth')
 ;
 
 INSERT INTO Appointment(id,date,starttime,endtime,status)
@@ -51,20 +51,20 @@ VALUES
 
 INSERT INTO Diagnose(appt,doctor,diagnosis,prescription)
 VALUES
-(1,'hathalye7@gmail.com', 'Bloating', 'Ibuprofen as needed'),
-(2,'hathalye8@gmail.com', 'Muscle soreness', 'Stretch morning/night'),
-(3,'hathalye8@gmail.com', 'Vitamin Deficiency', 'Good Diet')
+(1,'sumanth7@gmail.com', 'Bloating', 'Ibuprofen as needed'),
+(2,'prasanth8@gmail.com', 'Muscle soreness', 'Stretch morning/night'),
+(3,'prasanth8@gmail.com', 'Vitamin Deficiency', 'Good Diet')
 ;
 
 INSERT INTO DocsHaveSchedules(sched,doctor)
 VALUES
-(001,'hathalye7@gmail.com'),
-(002,'hathalye8@gmail.com')
+(001,'sumanth7@gmail.com'),
+(002,'prasanth8@gmail.com')
 ;
 
 INSERT INTO DoctorViewsHistory(history,doctor)
 VALUES
-(1,'hathalye7@gmail.com'),
-(2,'hathalye8@gmail.com'),
-(3,'hathalye8@gmail.com')
+(1,'sumanth7@gmail.com'),
+(2,'prasanth8@gmail.com'),
+(3,'prasanth8@gmail.com')
 ;
